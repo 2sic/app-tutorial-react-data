@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.01.00" ExportDate="2017-05-23T16:34:31.3031174+02:00">
+  <Header>
+    <App Guid="34f253c9-4334-42f9-8985-22eaf5040680" />
+    <Language Default="en-US" />
+    <Dimensions>
+      <Dimension DimensionID="3" Name="English (United States)" SystemKey="" ExternalKey="en-US" Active="true" />
+      <Dimension DimensionID="4" Name="Deutsch (Deutschland)" SystemKey="" ExternalKey="de-DE" Active="true" />
+    </Dimensions>
+  </Header>
+  <AttributeSets>
+    <AttributeSet StaticName="App-Resources" Name="App-Resources" Description="Stores resources like translations for an app" Scope="2SexyContent-App" AlwaysShareConfiguration="false">
+      <Attributes />
+    </AttributeSet>
+    <AttributeSet StaticName="App-Settings" Name="App-Settings" Description="Stores settings for an app" Scope="2SexyContent-App" AlwaysShareConfiguration="false">
+      <Attributes />
+    </AttributeSet>
+    <AttributeSet StaticName="17e6b89c-283d-49a2-ac07-fe8f74412b0a" Name="Todo-Item" Description="Todo-Item" Scope="2SexyContent" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="93ad69e2-6539-411b-931f-9ff5dc8267d6" KeyNumber="461">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Done" Type="Boolean" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="02602ba6-3273-4769-8a82-7457794f8f6f" KeyNumber="462">
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="Name" Value="Done" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+  </AttributeSets>
+  <Entities>
+    <Entity AssignmentObjectType="App" AttributeSetStaticName="2SexyContent-App" AttributeSetName="2SexyContent-App" EntityGUID="976bb579-ebde-4f27-8936-2e9dafe48e30" KeyNumber="6">
+      <Value Key="AllowRazorTemplates" Value="False" Type="Boolean" />
+      <Value Key="Version" Value="00.00.01" Type="String" />
+      <Value Key="OriginalId" Value="" Type="String" />
+      <Value Key="DisplayName" Value="ReactExample" Type="String" />
+      <Value Key="Folder" Value="ReactExample" Type="String" />
+      <Value Key="AllowTokenTemplates" Value="False" Type="Boolean" />
+    </Entity>
+    <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="78b5d3e3-2bb2-4cd7-86a5-b03761a870a8" KeyNumber="6" />
+    <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="235986cb-943a-4677-a62b-fea72a737ebc" KeyNumber="6" />
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="e46fb777-a851-4441-932f-f55e95cf9147">
+      <Value Key="UseForList" Value="False" Type="Boolean">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="PresentationTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="ContentTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="PublishData" Value="False" Type="Boolean">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="ListPresentationTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="ListContentTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="Path" Value="build/index.html" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="Type" Value="Token" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="ViewNameInUrl" Value="" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="Name" Value="Main View" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="IsHidden" Value="False" Type="Boolean">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="StreamsToPublish" Value="" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="Location" Value="Portal File System" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="17e6b89c-283d-49a2-ac07-fe8f74412b0a" AttributeSetName="Todo-Item" EntityGUID="1b67e402-f739-4908-bb27-652799d87213">
+      <Value Key="Done" Value="False" Type="Boolean">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Create sample React-App for 2sxc" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity AssignmentObjectType="Entity" AttributeSetStaticName="PermissionConfiguration" AttributeSetName="PermissionConfiguration" EntityGUID="d5d7ae9a-f69b-4a91-b253-3246c4c90739" KeyGuid="17e6b89c-283d-49a2-ac07-fe8f74412b0a">
+      <Value Key="Grant" Value="r" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="Condition" Value="SecurityAccessLevel.View" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Security Rule" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="17e6b89c-283d-49a2-ac07-fe8f74412b0a" AttributeSetName="Todo-Item" EntityGUID="1a3af02b-b65e-425e-9d01-0d5d80584a27">
+      <Value Key="Done" Value="True" Type="Boolean">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="Install 2sxc" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="fbb37ddc-0934-4117-9652-2e3bfd8f8774">
+      <Value Key="UseForList" Value="False" Type="Boolean">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="PresentationTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="ContentTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="PublishData" Value="False" Type="Boolean">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="ListPresentationTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="ListContentTypeStaticName" Value="" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="Path" Value="dev.html" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="Type" Value="Token" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="ViewNameInUrl" Value="" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="Name" Value="Dev" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="IsHidden" Value="False" Type="Boolean">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="StreamsToPublish" Value="" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="Location" Value="Portal File System" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="17e6b89c-283d-49a2-ac07-fe8f74412b0a" AttributeSetName="Todo-Item" EntityGUID="48e1a562-310c-4ce6-9f5f-cdd28c50599a">
+      <Value Key="Done" Value="False" Type="Boolean">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+      <Value Key="Title" Value="New todo" Type="String">
+        <Dimension DimensionID="3" ReadOnly="false" />
+      </Value>
+    </Entity>
+  </Entities>
+  <PortalFiles />
+  <PortalFolders>
+    <Folder Id="2634" RelativePath="adam/ReactExample/" />
+  </PortalFolders>
+</SexyContent>
