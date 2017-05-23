@@ -1,0 +1,3 @@
+.todo-app {  background:#FFF; padding:10px; }
+.todo { padding:9px 15px; border:1px solid #BBB; font-size:16px; margin-top:-1px; }
+.todo input[type='checkbox'] { margin-right:10px; }
