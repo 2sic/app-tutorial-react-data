@@ -15,5 +15,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://2sxc.dev/Portals/0/2sxc/ReactExample/build/"
+  "homepage": "[App:Path]/build/"
 }
